@@ -1,0 +1,108 @@
+# Applications of Machine Learning
+
+> Based on Day 8 notes, expanded with current (2026) applications since the original lecture predates recent developments.
+
+## Why This Matters
+
+ML isn't a "future" technology — it's already embedded in products people use daily, often invisibly. Two broad categories:
+
+- **B2C (Business-to-Consumer):** Direct-to-user products — WhatsApp, YouTube, Instagram. Easy to spot because you interact with them yourself.
+- **B2B (Business-to-Business):** ML working *inside* a company's operations to cut costs or boost profit. Less visible, but this is where a huge amount of real-world ML value is created.
+
+---
+
+## 1. Retail & E-commerce
+
+**Inventory & demand forecasting**
+Amazon sells crores of products. Before a big sale event, they can't stock every product equally — that ties up massive capital. Data scientists analyze years of historical sales data to predict which products will sell well, so stock levels can be optimized. A wrong prediction here means huge losses.
+
+**Customer profiling from purchase data**
+Retailers (e.g., large supermarket chains) collect your phone number at checkout. This isn't for SMS offers — it's to build a behavioral profile: what you buy, how often, and what that implies (health-conscious, spicy-food lover, sports enthusiast, etc.). This profile data is often sold to advertisers for targeted marketing — far more effective than random mass messaging. The same principle drives free products across the internet: "If you're not paying for the product, you are the product."
+
+**Market basket analysis (recommendation placement)**
+Association rule mining (e.g., the classic "who buys X also buys Y" pattern) determines which products are placed near each other in stores or shown together online. Remove ML from this and retail logistics regress significantly.
+
+## 2. Banking & Finance
+
+**Loan approval / credit risk scoring**
+Your loan application profile is compared against historical patterns of people who did/didn't repay loans. ML models estimate default probability (e.g., "63% chance this applicant won't repay") and flag risky applications for rejection or further review.
+
+**Other banking use cases**
+- Deciding where to open new branches
+- Choosing promotional/marketing plans by city or customer segment
+- Insurance risk pricing, fraud detection
+- Algorithmic and high-frequency stock trading
+
+## 3. Transportation & Logistics
+
+**Dynamic/surge pricing**
+Cab-hailing apps (Ola, Uber) raise prices during high-demand, low-supply windows (rush hour, festivals). The extra fare charged to riders is used to incentivize nearby drivers to come online — supply and demand forecasting drives this pricing engine in real time.
+
+**Route optimization**
+Delivery and logistics companies use ML to compute the most efficient routes for drivers covering many delivery points — a core part of what powers services like Google Maps and last-mile delivery.
+
+## 4. Manufacturing
+
+**Predictive maintenance**
+Advanced manufacturers (e.g., Tesla) use heavily automated factories with robotic arms performing precision tasks. IoT sensors track metrics like temperature, RPM, and pressure continuously. A gradual anomaly (e.g., RPM slowly drifting from 300 to 298 to 295) signals a machine part is likely to fail *before* it actually breaks. Engineers are dispatched proactively — avoiding costly full production-line shutdowns and reputational damage from delayed deliveries.
+
+## 5. Social Media & Sentiment Analysis
+
+**Sentiment analysis as a product itself**
+Text/reviews can be classified as positive or negative in sentiment. Example: analyzing IMDb-style movie reviews to auto-generate a sentiment-based rating alongside the official one.
+
+**Twitter's monetization angle (illustrative example from the lecture)**
+The described (unverified, blog-sourced) strategy: run sentiment analysis on tweets about a specific topic (e.g., an election hashtag) to gauge real public opinion — arguably more genuine than a survey, since people tweet what they actually believe. This sentiment data, sold to stock traders/financial firms rather than media houses, could inform trading decisions ahead of public results (e.g., positioning in a company's stock anticipating a market reaction to an election outcome). The broader point: raw social sentiment data, when sold to the right buyer, can generate far more revenue than ad slots.
+
+---
+
+## Modern Applications (Post-2020s Additions)
+
+The original lecture predates several major shifts in ML. Worth adding to the picture:
+
+**Generative AI & Large Language Models**
+- Conversational assistants (like the one you're reading this from), code generation and pair-programming tools, AI-powered search and research assistants
+- Document/report drafting, summarization, translation at near-human quality
+- Multimodal models that understand and generate text, images, audio, and video together
+
+**Image & video generation**
+- Text-to-image and text-to-video generation for marketing, design prototyping, and content creation
+- AI-assisted photo/video editing (background removal, upscaling, style transfer)
+
+**Healthcare**
+- Medical imaging diagnostics (detecting tumors, fractures, diabetic retinopathy from scans)
+- Drug discovery acceleration — predicting molecule behavior instead of pure lab trial-and-error
+- Personalized treatment recommendations based on patient history and genomics
+
+**Autonomous systems**
+- Self-driving cars and driver-assist systems (beyond just factory automation)
+- Drones for delivery, agriculture monitoring, and surveillance
+- Warehouse robotics (e.g., automated picking and sorting at scale)
+
+**Code & software engineering**
+- AI coding agents that can write, review, debug, and even autonomously execute multi-step engineering tasks
+- Automated test generation and code review assistants
+
+**Fraud & security**
+- Real-time transaction fraud detection (well beyond the loan-approval use case)
+- Cybersecurity threat detection and anomaly detection in network traffic
+- Deepfake detection — an ML application that exists specifically *because* generative ML created a new problem
+
+**Personalization at scale**
+- Recommendation engines have evolved from basic collaborative filtering to deep learning-based systems (Netflix, Spotify, YouTube, e-commerce) that personalize in near real-time
+- Dynamic pricing has expanded well beyond ride-hailing into airlines, hotels, and e-commerce flash sales
+
+**Agentic AI**
+- Systems that don't just answer questions but autonomously plan and execute multi-step tasks — booking, research, data pipeline management, customer support resolution end-to-end
+- AI agents integrated into business tools (CRM, project management, spreadsheets) to automate workflows directly, rather than just assisting a human doing them
+
+**Climate & scientific research**
+- Weather and climate modeling improvements
+- Protein structure prediction (a major scientific breakthrough enabling faster biology/medical research)
+- Materials science — discovering new materials computationally before physical synthesis
+
+---
+
+## Key Takeaway
+
+The original lecture's core lens — **ML quietly running inside a business to drive profit (B2B) vs. ML you directly interact with (B2C)** — still holds. What's changed since is the *scale and autonomy*: ML has moved from narrow prediction tasks (will this loan default? which product to stock?) toward generative and agentic systems that can produce content and take actions on their own.
